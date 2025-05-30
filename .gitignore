@@ -1,0 +1,6 @@
+/library/
+/temp/
+.vscode
+*.sln
+*.csproj
+UserSettings/
