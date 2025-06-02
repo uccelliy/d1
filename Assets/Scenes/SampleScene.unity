@@ -414,6 +414,7 @@ GameObject:
   - component: {fileID: 1098085087}
   - component: {fileID: 1098085086}
   - component: {fileID: 1098085090}
+  - component: {fileID: 1098085091}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -519,6 +520,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc30779bcc6f4f440b1cb841bfc82af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 1098085091}
+  groundCheck: {fileID: 960267637}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  jumpHeight: 1
+  gravity: -9.81
+  speed: 5
+--- !u!143 &1098085091
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098085085}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1898351418
 GameObject:
   m_ObjectHideFlags: 0
