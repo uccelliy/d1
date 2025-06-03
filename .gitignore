@@ -1,8 +1,0 @@
-/library/
-/temp/
-.vscode
-*.sln
-*.csproj
-*.log
-UserSettings/
-Logs/
