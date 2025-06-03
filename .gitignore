@@ -1,0 +1,12 @@
+/library/
+/temp/
+.vscode
+*.sln
+*.csproj
+*.log
+UserSettings/
+<<<<<<< HEAD
+*.log
+=======
+>>>>>>> refs/remotes/origin/main
+Logs/
