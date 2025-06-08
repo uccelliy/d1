@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 459acc57a8e430e4299505541b74278d
+guid: 04c24487c28dce24186641b26011cc9a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wheels2_0
+      name: house&fountain_0
       rect:
         serializedVersion: 2
-        x: 972
-        y: 112
-        width: 220
-        height: 200
+        x: 144
+        y: 0
+        width: 488
+        height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf4de9a559a61c34fa9bed1f64d72f16
-      internalID: 1714643567
+      spriteID: d583349a64b59604abf252dbc57217c3
+      internalID: -1761807767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheels2_1
+      name: house&fountain_1
       rect:
         serializedVersion: 2
-        x: 804
-        y: 16
-        width: 180
-        height: 84
+        x: 976
+        y: 0
+        width: 924
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 392a3f4fbcd350c4c9545c0921e711be
-      internalID: -193902270
+      spriteID: f1b0f7d492cc4e04f868db2da32ae23b
+      internalID: -1895801373
       vertices: []
       indices: 
       edges: []
@@ -154,7 +154,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aaeb72e412e71674dace2420ce794d08
+    spriteID: 34c65bd09652d1f44a33104d63a2dd66
     internalID: 0
     vertices: []
     indices: 
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wheels2_0: 1714643567
-      wheels2_1: -193902270
+      house&fountain_0: -1761807767
+      house&fountain_1: -1895801373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

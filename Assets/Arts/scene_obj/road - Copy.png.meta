@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 459acc57a8e430e4299505541b74278d
+guid: 883afb8bc779109439d1a349bc516a4e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wheels2_0
+      name: road_0
       rect:
         serializedVersion: 2
-        x: 972
-        y: 112
-        width: 220
-        height: 200
+        x: 0
+        y: 0
+        width: 1920
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,29 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf4de9a559a61c34fa9bed1f64d72f16
-      internalID: 1714643567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wheels2_1
-      rect:
-        serializedVersion: 2
-        x: 804
-        y: 16
-        width: 180
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 392a3f4fbcd350c4c9545c0921e711be
-      internalID: -193902270
+      spriteID: 3f88d68eb54335b43a165daa002cfefa
+      internalID: 332576307
       vertices: []
       indices: 
       edges: []
@@ -154,7 +133,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aaeb72e412e71674dace2420ce794d08
+    spriteID: 6f86143053652b94a897d062af593414
     internalID: 0
     vertices: []
     indices: 
@@ -162,8 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wheels2_0: 1714643567
-      wheels2_1: -193902270
+      road_0: 332576307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
