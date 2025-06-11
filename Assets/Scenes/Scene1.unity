@@ -292,11 +292,10 @@ Transform:
   m_GameObject: {fileID: 276788261}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2623, y: 1.1882, z: 0}
+  m_LocalPosition: {x: -0.34, y: 2.57, z: -4.42}
   m_LocalScale: {x: 3.2772708, y: 3.2577798, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1921372625}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &297963454
@@ -442,9 +441,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1327093217
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 88827567edda74c4eae444e72e97218a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -465,7 +464,7 @@ Transform:
   m_GameObject: {fileID: 631752428}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.93, y: -2.54, z: -0.014147873}
+  m_LocalPosition: {x: -6.19, y: -1.79, z: -0.014147873}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -502,12 +501,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 631752428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc30779bcc6f4f440b1cb841bfc82af3, type: 3}
+  m_Script: {fileID: 11500000, guid: ff7b85e16c3d68744b596ac13e12dd95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
-  playerRigidbody: {fileID: 0}
-  playerAnimator: {fileID: 0}
+  moveSpeed: 5
+  jumpForce: 12
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  groundCheck: {fileID: 1921372625}
+  groundCheckRadius: 0.2
+  isClimbing: 0
+  climbSpeed: 3
+  playerCollider: {fileID: 631752434}
+  playerAnimator: {fileID: 631752431}
+  playerRigidbody: {fileID: 631752433}
 --- !u!50 &631752433
 Rigidbody2D:
   serializedVersion: 4
@@ -625,9 +633,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1327093217
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c9143c14918372144aaf1f314bc54930, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -759,7 +767,6 @@ GameObject:
   - component: {fileID: 1921372625}
   - component: {fileID: 1921372624}
   - component: {fileID: 1921372626}
-  - component: {fileID: 1921372627}
   m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
@@ -805,9 +812,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1327093217
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: -207201922, guid: 719b3855a1ff80946b4bd5baabc8a018, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -828,11 +835,11 @@ Transform:
   m_GameObject: {fileID: 1921372622}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.389052, y: -1.512748, z: 0}
-  m_LocalScale: {x: 0.16312355, y: 0.10146965, z: 1}
+  m_LocalPosition: {x: 1.26, y: -3, z: 0}
+  m_LocalScale: {x: 0.5346, y: 0.33056578, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 276788263}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1921372626
 PolygonCollider2D:
@@ -951,33 +958,6 @@ PolygonCollider2D:
       - {x: 30, y: 2.25}
       - {x: 26.59375, y: 2.28125}
   m_UseDelaunayMesh: 0
---- !u!50 &1921372627
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921372622}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -987,3 +967,4 @@ SceneRoots:
   - {fileID: 631752430}
   - {fileID: 276788263}
   - {fileID: 1017634468}
+  - {fileID: 1921372625}
